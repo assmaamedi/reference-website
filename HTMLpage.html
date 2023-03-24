@@ -5,12 +5,13 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Web Design 1 Reference Site</title>
+   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
-      <nav>
+   <header role="banner">
+      <nav role="navigation">
          <ul>
-            <li><a href="Coverpage.html" aria-label="to home page">Home</a></li>
+            <li><a href="index.html" aria-label="back to home page">Home</a></li>
             <li><a href="#syntax" aria-label="learn about syntax">Syntax</a></li>
             <li><a href="#elements" aria-label="learn about generic elements">Generic Elements</a></li>
             <li><a href="#accessibility" aria-label="learn about accessibility">Accessisibility</a></li>
@@ -38,7 +39,7 @@
          </article>
 
          <article>
-            <h3> Quotes and Citations</h3>
+            <h3>Quotes and Citations</h3>
             <p> <strong>q</strong> <q>marks up quotes embedded into other elements</q> <blockquote> <strong>blockquote</strong> is for large stand alone quotes</blockquote></p>
          </article>
 
@@ -68,9 +69,9 @@
 
          <article>
             <h3>Common Global Attributes</h3>
-            <p>Used to provide more information about HTML elements</p>
-            <p> <strong>p class=""</strong> can be used multiple times within an HTML page</p>
-            <p> <strong>p id=""</strong> can only be used once within an HTML page, it's used to link the navigators to where they're going in the HTML page</p>
+            <p>Used to provide more information about HTML elements.</p>
+            <p> <strong>p class=""</strong> can be used multiple times within an HTML page.</p>
+            <p> <strong>p id=""</strong> can only be used once within an HTML page, it's used to link the navigators to where they're going in the HTML page.</p>
          </article>
 
          <article>
@@ -79,7 +80,7 @@
             <p><strong>footer</strong> is usually found at the bottom of a page, contains list of links, copyright information, extra info about comapny, and terms and services.</p>
             <p><strong>main</strong> wraps around the content of the page, it tells the browser where the main content is.</p>
             <p><strong>section</strong> wraps around related content. Usually each section has its own heading.</p>
-            <p><strong>article</strong> self contained composition on a web page. It is independenlt distributable or reusable. EX. blog post, product card, interactive wdget.</p>
+            <p><strong>article</strong> self contained composition on a web page. It is independenlt distributable or reusable. ex. blog post, product card, interactive widget.</p>
             <p><strong>nav</strong> its purpose is to provide navigational links  to current doument or other documents.</p>
             <p><strong>aside</strong> used for content that is indirectly related to the main content. Can be found presented on a sidebar for a website.</p>
          </article>
@@ -87,6 +88,40 @@
 
       <section id="accessibility">
          <h2>Accessibility</h2>
+
+         <article>
+            <h3>Landmark roles</h3>
+
+            <p>header <strong>role="banner"</strong> role that defines the masthead, added to the primary header.</p>
+            <p>nav <strong>role="navigation"</strong> role thats added to the primary navigation at the top.</p>
+            <p>main <strong>role="main"</strong> roles that defines an element as the main content of the page.</p>
+            <p>aside <strong>role="complimentary"</strong> role that defines an element as being related to prinmary content. Usually added to the aside.</p>
+            <p>footer <strong>role="contentinfo"</strong> role that defines element as being information about the content. Like copyright, terms, privacy policy etc. Usually added to the footer.</p>
+         </article>
+         
+         <article>
+            <h3>Labeling links</h3>
+
+            <p>adding the <strong>aria-label="description"</strong> is a non visual way of allowing screen readers to read the description</p>
+         </article>
+
+         <article>
+            <h3>Image Descriptions</h3>
+
+            <p>adding the <strong>alt</strong> attribute to images allows it to describe it to someone who cannot view it, and describe it if it doesn't load correctly</p>
+         </article>
+
+         <article>
+            <h3>Skip Links</h3>
+
+            <p>Skip links, primarily at the top of the page, allow you to jump to specific areas on a page.</p>
+            <p><strong>a href="#name"</strong> skip link to lead somewhere</p>
+            <p>main role="main" <strong>id="name"</strong> place it leads to.</p>
+         </article>
+      </section>
+
+      <section id="paths">
+         <h2>Paths and folders</h2>
       </section>
    </main>
 </body>
