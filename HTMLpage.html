@@ -9,6 +9,9 @@
 </head>
 <body>
    <header role="banner">
+      <section>
+         <h1>All About HTML</h1>
+      </section>
       <nav role="navigation">
          <ul>
             <li><a href="index.html" aria-label="back to home page">Home</a></li>
@@ -21,60 +24,57 @@
    </header>
 
    <main role="main">
-      <section>
-         <h1>All About HTML</h1>
-      </section>
 
       <section id="syntax">
          <h2>Syntax</h2>
 
-         <article>
+         <section>
             <h3>Headings</h3>
             <p> Elements nested within <strong>h1, h2, h3, h4, h5,</strong> and <strong>h6</strong> tags. Each number correlates to how important the information is. </p>
-         </article>
+         </section>
 
-         <article>
+         <section>
             <h3>Lists</h3>
             <p> There are multiple different lists that do different things like an unordered list using <strong>ul</strong> tags and <strong>li</strong> list tags <ul> <li>like</li> <li>this</li> </ul> an ordered list using <strong>ol</strong> tags and <strong>li</strong> list tags <ol> <li>like</li> <li>this</li> </ol> and a description list using <strong>dl</strong> tags, <strong>dt</strong> term tags, and <strong>dd</strong> definition tags <dl> <dt>like</dt> <dd>this</dd> </dl></p>
-         </article>
+         </section>
 
-         <article>
+         <section>
             <h3>Quotes and Citations</h3>
             <p> <strong>q</strong> <q>marks up quotes embedded into other elements</q> <blockquote> <strong>blockquote</strong> is for large stand alone quotes</blockquote></p>
-         </article>
+         </section>
 
-         <article>
+         <section>
             <h3>Phrasing elements</h3>
             <p> <strong>em</strong> is for <em>emphasis.</em> <strong>strong</strong> is to add greater emphasis and express <b>importance of urgency.</b> <Strong>i</Strong> is for words that are in another <i>language, technical terms, titles</i> they're visual only italics. <strong>b</strong> is for <b>keywords.</b></p> 
-         </article>
+         </section>
 
-         <article>
+         <section>
             <h3>Link text</h3>
             <p> to link taxt use the a tag with the href attribute. Like <strong>a href=</strong></p>
-         </article>
+         </section>
 
-         <article>
+         <section>
             <h3>Link images</h3>
             <p>To link images you need to embed them into yr HTML document. use the attributes to specify extra details like its location and alternative context. Use <strong>img scr="" alt=""</strong></p>
-         </article>
+         </section>
       </section>
 
       <section id="elements">
          <h2>Generic elements</h2>
 
-         <article>
+         <section>
             <h3>Generic elements</h3>
-            <p>Generic elements are meaningless elemets that are used to target specific content in order to manipulate it later is CSS or JS. <stong>div</stong> is a block element used to group elements together. <strong>span</strong> is used to mark up a part of text or document.</p>
-         </article>
+            <p>Generic elements are meaningless elemets that are used to target specific content in order to manipulate it later is CSS or JS. <strong>div</strong> is a block element used to group elements together. <strong>span</strong> is used to mark up a part of text or document.</p>
+         </section>
 
-         <article>
+         <section>
             <h3>Common Global Attributes</h3>
             <p>Used to provide more information about HTML elements.</p>
             <p> <strong>p class=""</strong> can be used multiple times within an HTML page.</p>
             <p> <strong>p id=""</strong> can only be used once within an HTML page, it's used to link the navigators to where they're going in the HTML page.</p>
-         </article>
+         </section>
 
-         <article>
+         <section>
             <h3>Structuring content</h3>
             <p> <strong>header</strong> is usually found at the top of a page, contains complany logo or name and main navigation. Can also be used within section to introduce content for headings, subeading, author etc.</p>
             <p><strong>footer</strong> is usually found at the bottom of a page, contains list of links, copyright information, extra info about comapny, and terms and services.</p>
@@ -83,13 +83,13 @@
             <p><strong>article</strong> self contained composition on a web page. It is independenlt distributable or reusable. ex. blog post, product card, interactive widget.</p>
             <p><strong>nav</strong> its purpose is to provide navigational links  to current doument or other documents.</p>
             <p><strong>aside</strong> used for content that is indirectly related to the main content. Can be found presented on a sidebar for a website.</p>
-         </article>
+         </section>
       </section>
 
       <section id="accessibility">
          <h2>Accessibility</h2>
 
-         <article>
+         <section>
             <h3>Landmark roles</h3>
 
             <p>header <strong>role="banner"</strong> role that defines the masthead, added to the primary header.</p>
@@ -97,27 +97,27 @@
             <p>main <strong>role="main"</strong> roles that defines an element as the main content of the page.</p>
             <p>aside <strong>role="complimentary"</strong> role that defines an element as being related to prinmary content. Usually added to the aside.</p>
             <p>footer <strong>role="contentinfo"</strong> role that defines element as being information about the content. Like copyright, terms, privacy policy etc. Usually added to the footer.</p>
-         </article>
+         </section>
          
-         <article>
+         <section>
             <h3>Labeling links</h3>
 
             <p>adding the <strong>aria-label="description"</strong> is a non visual way of allowing screen readers to read the description</p>
-         </article>
+         </section>
 
-         <article>
+         <section>
             <h3>Image Descriptions</h3>
 
             <p>adding the <strong>alt</strong> attribute to images allows it to describe it to someone who cannot view it, and describe it if it doesn't load correctly</p>
-         </article>
+         </section>
 
-         <article>
+         <section>
             <h3>Skip Links</h3>
 
             <p>Skip links, primarily at the top of the page, allow you to jump to specific areas on a page.</p>
             <p><strong>a href="#name"</strong> skip link to lead somewhere</p>
             <p>main role="main" <strong>id="name"</strong> place it leads to.</p>
-         </article>
+         </section>
       </section>
 
       <section id="paths">
