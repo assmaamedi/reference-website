@@ -15,18 +15,113 @@
       <nav role="navigation">
          <ul>
             <li><a href="index.html" aria-label="to home page">Home</a></li>
-            <li><a href="#syntax" aria-label="learn about syntax">Syntax</a></li>
-            <li><a href="#elements" aria-label="learn about generic elements">Generic Elements</a></li>
-            <li><a href="#accessibility" aria-label="learn about accessisibility">Accessisibility</a></li>
-            <li><a href="#paths" aria-label="learn about paths and folders">Paths and folders</a></li>
+            <li><a href="#attach" aria-label="learn how to attach a css file">Attaching a CSS file</a></li>
+            <li><a href="#target" aria-label="learn how to target html">Targetting HTML</a></li>
+            <li><a href="#text" aria-label="learn how to style text">Styling Text</a></li>
+            <li><a href="#links" aria-label="learn how to style links">Styling Links</a></li>
+            <li><a href="#boxes" aria-label="learn how to make boxes">Boxes</a></li>
          </ul>
       </nav>
    </header>
 
    <main role="main">
 
-      <section id="syntax">
-         <h2> </h2>
+      <section id="attach">
+         <h2>Attaching a CSS file</h2>
+      </section>
+
+      <section>
+         <p>A CSS file is created within the code editor and saved with the extensiion .css.</p>
+         <p>TO attach a CSS file it needs to be linked wihtin the HTML using: <strong>link rel="stylesheet" href="css/style.css"</strong> within the head.</p>
+         <p><strong>href</strong> points to the location of the CSS file.</p>
+         <p><strong>rel</strong> categorizes it as a style sheet.</p>
+      </section>
+
+      <section id="target">
+         <h2>Targetting HTML</h2>
+      </section>
+
+      <section>
+         <h3>Selectors</h3>
+         <p><strong>Tag </strong>select all tags of the same type. Ex. <strong>html {} h1{} p {}</strong></p>
+         <p><strong>.  - Class</strong> select an element that has a class within the HTML. Ex. <strong>.masthead .nav .contact</strong></p>
+         <p><strong># - ID</strong> select an element with an ID. Ex. <strong>#heading-1 {} #github {} #top {}.</strong></p>
+         <p><strong>Space - Descendant</strong> select an elemnt directly under another element. Ex. <strong>ul li {} nav a {}</strong></p>
+         <p><strong>> Child</strong> select an element inside another element. Ex. <strong> ul > li {} h1 > span {} footer > .copyright {}</strong></p>
+         <p><strong>+ - Adjacent sibling</strong> select an element directly beside another element. Ex. <strong> h1 + p {} li + li {}</strong></p>
+         <p><strong>~ - General sibling</strong> select an element that's at the same level. Ex. <strong>p ~ p {} h1 ~ p {} dd ~ dt {}</strong></p>
+         <p><strong>[] - Attribute</strong> select an element by its attribure. Ex. <strong>[data-state="active"] {} [download] {}</strong></p>
+      </section>
+
+      <section>
+         <h3>Pseudo classes</h3>
+         <p><strong>:first-child</strong> select the first element inside the  parent. Ex. <strong>p:first-child {} ul li:first-child {}</strong></p>
+         <p><strong>:last-child</strong> select the last element inside the parent. Ex. <strong>li:last-child {} p:last-child {}</strong></p>
+         <p><strong>:only-child</strong> select the only element inside the parent. Ex. <strong>li:only-child {}</strong></p>
+         <p><strong>:nth-child()</strong> select an element by its number. Ex. <strong>li:nth-child(2) {} tr:nth-child(odd) {}</strong></p>
+         <p><strong>:nth-last-child()</strong> select an element by number (backwards). Ex. <strong>li:nth-last-child(3)</strong></p>
+         <p><strong>:nth-of-type()</strong> select an element by number and others that match (not all children). Ex. <strong>p:nth-of-type(2)</strong></p>
+         <p><strong>:nth-last-of-type()</strong> select an element by its number (backwards). Ex <strong>p:nth-last-of-type(2) {}</strong></p>
+         <p><strong>:first-of-type</strong> select an element that's the first of it's kind within a parent. Ex. <strong>p:first-of-type{}</strong></p>
+         <p><strong>:last-of-type</strong> slect an element that's the last of its kind wihtin its parent. Ex. p:last-of-type {}</p>
+      </section>
+
+      <section id="text">
+         <h2>Styling text</h2>
+      </section>
+
+      <section>
+         <h3>Font properties</h3>
+         <p><strong>font-size</strong> adjusts the size of the font. Units used being rem (best choice), em, px.</p>
+         <p><strong>font-weight</strong> sets how thick, bold or thin text is displayed.</p>
+         <p><strong>font-style</strong> specifies a font style for the text.</p>
+         <p><strong>line-height</strong> for adjusting line height: a single number that multiplies font-size.</p>
+      </section>
+
+      <section>
+         <h3>Text decorations</h3>
+         <p><strong>text-transform</strong> changes text to <strong>uppcase, lowercase, capitalize.</strong></p>
+         <p><strong>text-decoration</strong> specifies decoration added to text. <strong>none, underline, line-through, overline</strong></p>
+         <p><strong>text-align</strong> specifies the horizontal alignment of text in an element. <strong>left, center (American spelling), right, justify</strong></p>
+         <p><strong>text-indent</strong> indent the first line of text</p>
+         <p><strong>text-shadow</strong> adds a shadow to the text. Specified like: text-shadow: horizontal-offset vertical-offset blur-radius colour. Ex. <strong>text-shadow: 2px 2px #ff0000;</strong></p>
+      </section>
+
+      <section>
+         <h3>Embedding fonts</h3>
+         <p>Go to <a href=https://fonts.google.com/> google fonts</a> and select the font you wish to add. Copy and paste link tags into the head of your HTML file.</p>
+      </section>
+
+      <section id="links">
+         <h2>Styling Links</h2>
+         <p><strong>a:link {}</strong> for an unvisited link. Default state.</p>
+         <p><strong>a:visited {}</strong> for a visited link. State after it's been clicked.</p>
+         <p><strong>a:hover {}</strong> for when you hover the link whith your mouse.</p>
+         <p><strong>a:focuse {}</strong> for when the keyboard tab focuses the link.</p>
+         <p><strong>a:active {}</strong> for when the mouse button is pressed down on a link</p>
+         <p><strong>a.number {}</strong> for selecting a specific link within a string of links.</p>
+         <p>For button links, style them with a border, color, background color, and padding</p>
+      </section>
+
+      <section id="boxes">
+         <h2>Boxes</h2>
+      </section>
+
+      <section>
+         <h3>Padding</h3>
+         <p>The outisde content is padding. This pushes the box away from content. It's used to give breathing room.</p>
+         <p>background color is visible with the padding.</p>
+         <p><strong>.box {padding-top:0; padding-right: 30px; padding-bottom: 40px; padding-left: 4em;}</strong></p>
+         <h4>Shorthand</h4>
+         <p>Padding shorthand: <strong>.box {padding: 0 30px 40px 4em;}</strong></p>
+      </section>
+
+      <section>
+         <h3>Margin</h3>
+         <p>The invisible space around your box. Adds apscing pushing other boxes away from the box. Can possess positive and negative values.</p>
+         <p><strong>.box {margin-top: -10px; margin-right: 30px; margin-bottom: 40px; margin-left: 4em;}</strong></p>
+         <h4>Shorthand</h4>
+         <p>Margin shorthand <strong>margin: -10px 30px 40px 4em;</strong> </p>
       </section>
    </main>
 </body>
