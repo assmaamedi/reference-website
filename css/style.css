@@ -1,0 +1,60 @@
+html {
+    box-sizing: border-box;
+ }
+ 
+ *, *::before, *::after {
+    box-sizing: inherit;
+ }
+
+h1 {
+    width: 75%;
+    padding: .5em .5em .5em .5em;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow:  2px 2px rgba(0,0,0,.8);
+    color: white;
+    background-color: #ff7887;
+    max-width: 900px;
+    padding: .5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    background-color: #159186;
+    padding: .5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+strong {
+    color: #21a58d;
+}
+
+main {
+    background-color: #e6e6e6;
+}
+
+h3 {
+    color: #ff7887;
+    padding: 5px;
+}
+
+p, h1, h2, h3, h4, nav, main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1.5em 0 1.5em 0;
+}
+
+h3, h4 {
+    padding: 1rem;
+}
+
+p {
+    padding: 2rem;
+}
+
+h4 {
+    color: #bc9c94;
+}
